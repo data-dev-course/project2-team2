@@ -25,7 +25,7 @@ def get_kofic_data(target_dt, item_per_page='10', multi_movie_yn=None, rep_natio
 
     try:
         # API 호출
-        response = requests.get(base_url, params=params, timeout=30)
+        response = requests.get(base_url, params=params, timeout=60)
 
         if response.status_code == 200:
             # JSON 데이터 파싱
